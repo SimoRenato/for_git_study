@@ -97,13 +97,3 @@
     width: 100%;
   }
 
-div .key section_inner {
-  display: block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;    
-  background-color: yellow; 
-
-
-}
