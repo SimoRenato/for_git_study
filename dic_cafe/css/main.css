@@ -138,25 +138,11 @@
   .logo img{
     width: 100%;
   }
-
-  .key .section_inner {
-    width: 300px;
-    height: auto;
-    border: 2px red;
-    padding: 20px auto;
-    margin: 20px;
-    background-color: none;
-    box-sizing: border-box;
-
-  }
-
-  .key .section_inner h1 {
-    font-size: 24px;
-    color: #000;
-    margin-bottom: 10px;
-  }
-
-  .key .section_inner p {
-    font-size: 14px;
-    color: #000;
+  
+  .key .section_inner #content {
+  border: 2px solid #333; /* Adds a solid rectangular border around the div */
+  padding: 20px; /* Adds padding inside the border */
+  margin: 20px 0; /* Adds margin above and below the div */
+  background-color: #f9f9f9; /* Optional: Sets a background color inside the border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
   }
