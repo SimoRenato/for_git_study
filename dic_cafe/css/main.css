@@ -1,5 +1,107 @@
 @charset "utf-8";
 
+/* html {
+  height: 100%;
+} */
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div, li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background:  linear-gradient(90deg, #fff 10%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+
+
+
+.section_inner {
+  padding: 50px 10% 30px;
+}
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+}
+.key h1{
+  font-size: 2.5rem;
+}
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+#menu .coffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+}
+
+  /* Add the following */
+  
+  .logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    width: 100%;
+  }
+
+
+
   .section_inner { 
     padding: 50px 10% 30px;
   }
@@ -41,102 +143,107 @@
     border-radius: 5px; /* Optional: Rounded corners for the image */
   }
   
+  #menu .section_title{
+    color: #000;
+  }
   
+  #menu .menu_title{
+    color: #008000;
+  }
  
 
-  
+
+  .section_inner {
+    position: relative; /* Ensure that the section can contain the background image */
+}
 
 
 
+.section_inner #menu {
+    background-image: url('../images/sample_menu_bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Make the background image sticky */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    padding: 20px; /* Add some padding if needed */
+    color: #fff; /* Optional: set text color to make it readable on the background */
+}
 
-  .key {
-    height: 500px;
-    background: center / cover no-repeat url("../images/sample_key.jpg");
-    font-family: 'Noto Serif JP', serif;
-    font-weight: bold;
-  }
-  .key h1{
-    font-size: 2.5rem;
-  }
-  .section_title {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: bold;
+
+.center {
     text-align: center;
-    margin-bottom: 50px;
-  }
-  .menu_title {
-    display: inline-block;
-    font-family: 'Noto Serif JP', serif;
-    font-size: 1.5rem;
-    color: #42210b;
-    border-bottom: solid #42210b 1px;
+}
+
+.menu_title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
     margin-bottom: 20px;
-  }
-  .center {
-    text-align: center;
-  }
+}
 
-  .coffee_menu_image {
-    width: 20%;
-    border-radius: 50%;
-  }
-
-  .header_nav {
-    background:  rgba(0,0,0,.6);
-  }
-
-  .global_nav_item {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-  }
-  .global_nav_item:hover {
-    background: #fff;
-    color: #42210b;
-  }
-
-  .global_nav {
-    display: flex;
-  }
-
-  .header_nav {
-    background:  rgba(0,0,0,.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 60px;
-    /* Add the following */
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .global_nav {
-    display: flex;
-    /* Add the following */
-    align-items: stretch;
-  }
-  .global_nav_item {
-    color: #fff;
-    text-decoration: none;
-    /* Add the following */
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-  }
-  .global_nav_item:hover {
-    background: #fff;
-    color: #42210b;
-  }
-
-  /* Add the following */
-  
-  .logo {
-    width: 120px;
-    display: flex;
-    align-items: center;
-  }
-  .logo img{
-    width: 100%;
-  }
+.coffee_menu_image {
+    max-width: 100%; /* Ensure images don't overflow their container */
+    height: auto;
+}
   
  
+
+.section-container {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 3%;
+  max-width: 1000px;
+  margin-inline-start: auto;
+  padding: auto;
+  
+}
+
+.column {
+  width: 49%;
+  display: inline-block;
+  background-color: #fff;
+ 
+ 
+}
+
+ .content { 
+  display: inline-flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.content img {
+  width: 55%;
+  object-fit: contain; /* Ensures the image covers its container */
+  padding-left: 80px;
+  padding: auto;
+}
+
+.content p {
+  width: 45%;
+  padding-left: 75px; /* Adds some space between the image and the text */
+  margin: 0;
+  display: inline-flex;
+  align-items: center; /* Vertically centers the text */
+}
+.price p {
+  padding-left: 100; /* Adds some space between the image and the text */
+ }
+  
+
+
+.content h2 {
+  width: 45%;
+  padding-left: 75px; /* Adds some space between the image and the text */
+  margin: 0;
+  display: inline-flex;
+  align-items: center; /* Vertically centers the text */
+  color: #000;
+}
