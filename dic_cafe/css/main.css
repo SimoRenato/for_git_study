@@ -322,6 +322,12 @@ li {
 }
 
 
+
+#map .map-container {
+  margin-bottom: -4px; /* Remove gap between map and footer */
+}
+
+
 footer {
   background-color: #251e19; /* Dark brown color for the background */
   padding: 0.5em;
@@ -330,6 +336,7 @@ footer {
   width: 100%;
   margin: 10;
    margin-top: auto;
+   height: 75px;
   
  
 }
@@ -372,5 +379,9 @@ footer {
   width: 50px;
   height: 20px;
 }
+
+
+
+
 
 
